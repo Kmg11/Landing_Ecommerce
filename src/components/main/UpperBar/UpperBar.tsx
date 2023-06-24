@@ -20,7 +20,7 @@ export const UpperBar = () => {
 
 	return (
 		<Box sx={{ backgroundColor: theme.palette.primary.main }}>
-			<Container>
+			<Container maxWidth="xl">
 				<Grid container p={0.9}>
 					<Grid
 						item
@@ -35,13 +35,13 @@ export const UpperBar = () => {
 							<FacebookIcon />
 						</Link>
 						<Link href="/" sx={{ color: "white" }}>
-							<InstagramIcon fontSize="small" />
+							<InstagramIcon sx={{ fontSize: "15px" }} />
 						</Link>
 						<Link href="/" sx={{ color: "white" }}>
-							<TwitterIcon fontSize="small" />
+							<TwitterIcon sx={{ fontSize: "15px" }} />
 						</Link>
 						<Link href="/" sx={{ color: "white" }}>
-							<WhatsAppIcon fontSize="small" />
+							<WhatsAppIcon sx={{ fontSize: "15px" }} />
 						</Link>
 					</Grid>
 
@@ -51,17 +51,17 @@ export const UpperBar = () => {
 						md={6}
 						display="flex"
 						alignItems="center"
-						justifyContent={isDownMd ? "center" : "start"}
+						justifyContent={isDownMd ? "center" : "end"}
 						gap={5}
 					>
-						<Box display="flex" alignItems="center" gap="10px">
+						<Box display="flex" alignItems="center" gap="10px" color="white">
 							<LocalPhoneIcon fontSize="small" />
 							<Typography component="span" variant="subtitle1" fontWeight="700">
 								0000 - 123456789
 							</Typography>
 						</Box>
 
-						<Box display="flex" alignItems="center" gap="10px">
+						<Box display="flex" alignItems="center" gap="10px" color="white">
 							<EmailIcon fontSize="small" />
 							<Typography component="span" variant="subtitle1" fontWeight="700">
 								info@example.com

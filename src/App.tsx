@@ -1,9 +1,10 @@
-import { UpperBar } from "components";
+import { Navbar, UpperBar } from "components";
 
 function App() {
 	return (
 		<>
 			<UpperBar />
+			<Navbar />
 		</>
 	);
 }

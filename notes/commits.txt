@@ -17,6 +17,17 @@ Create UpperBar component
 
 ----------------------------------------------------------------------------
 
+Create Navbar
+
+- Remove dark mode key in theme
+- Fix UpperBar text color
+- Create Logo component
+- Create Navbar component
+- Handle Responsive in Navbar component
+
+----------------------------------------------------------------------------
+
 Notes
 
 - Use React QUery
+- Type docs in Readme.md
