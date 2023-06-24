@@ -1,0 +1,9 @@
+Start the project
+
+- Clean files
+- Install material ui
+- Add font lato and Nunito fonts
+- Setup material ui theme
+- Setup git repo
+
+----------------------------------------------------------------------------
