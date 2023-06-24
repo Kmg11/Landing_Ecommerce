@@ -14,7 +14,7 @@ export const theme = createTheme({
 	},
 
 	typography: {
-		fontFamily: "Lato, sans-serif",
+		fontFamily: "Nunito, sans-serif",
 		h1: { fontFamily: "Nunito, sans-serif" },
 		h2: { fontFamily: "Nunito, sans-serif" },
 		h3: { fontFamily: "Nunito, sans-serif" },

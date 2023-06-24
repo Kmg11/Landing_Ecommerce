@@ -7,3 +7,16 @@ Start the project
 - Setup git repo
 
 ----------------------------------------------------------------------------
+
+Create UpperBar component
+
+- Add CssBaseline
+- Install @mui/icons-material
+- Create UpperBar component
+- Handle Responsive in UpperBar component
+
+----------------------------------------------------------------------------
+
+Notes
+
+- Use React QUery

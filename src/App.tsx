@@ -1,5 +1,11 @@
+import { UpperBar } from "components";
+
 function App() {
-	return <div>App</div>;
+	return (
+		<>
+			<UpperBar />
+		</>
+	);
 }
 
 export default App;
