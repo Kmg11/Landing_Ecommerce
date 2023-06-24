@@ -37,7 +37,7 @@ export function List() {
 					aria-controls="menu-appbar"
 					aria-haspopup="true"
 					onClick={handleOpenNavMenu}
-					// color="inherit"
+					color="inherit"
 				>
 					<MenuIcon />
 				</IconButton>
@@ -56,10 +56,14 @@ export function List() {
 					}}
 					open={Boolean(anchorElNav)}
 					onClose={handleCloseNavMenu}
-					sx={{ display: { xs: "block", md: "none" } }}
+					sx={{ display: { xs: "block", lg: "none" } }}
 				>
 					{pages.map((page) => (
-						<MenuItem key={page} onClick={handleCloseNavMenu}>
+						<MenuItem
+							key={page}
+							onClick={handleCloseNavMenu}
+							sx={{ minWidth: "120px" }}
+						>
 							<Typography textAlign="center">{page}</Typography>
 						</MenuItem>
 					))}

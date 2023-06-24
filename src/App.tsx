@@ -1,10 +1,10 @@
-import { Navbar, UpperBar } from "components";
+import { MainHeader, UpperBar } from "components";
 
 function App() {
 	return (
 		<>
 			<UpperBar />
-			<Navbar />
+			<MainHeader />
 		</>
 	);
 }

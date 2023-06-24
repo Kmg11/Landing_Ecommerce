@@ -8,7 +8,10 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export function Navbar() {
 	return (
-		<AppBar position="static" sx={{ backgroundColor: "white", boxShadow: 0 }}>
+		<AppBar
+			position="static"
+			sx={{ backgroundColor: "transparent", boxShadow: 0 }}
+		>
 			<Container maxWidth="xl">
 				<Toolbar
 					disableGutters

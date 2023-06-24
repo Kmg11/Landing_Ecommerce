@@ -19,7 +19,7 @@ export const UpperBar = () => {
 	const isDownMd = useMediaQuery(theme.breakpoints.down("md"));
 
 	return (
-		<Box sx={{ backgroundColor: theme.palette.primary.main }}>
+		<Box sx={{ backgroundColor: theme.palette.primary.light }}>
 			<Container maxWidth="xl">
 				<Grid container p={0.9}>
 					<Grid

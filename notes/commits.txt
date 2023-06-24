@@ -27,6 +27,16 @@ Create Navbar
 
 ----------------------------------------------------------------------------
 
+Create Header
+
+- Create MainHeader component
+- Handle Responsive for MainHeader component
+- Some fixes at Navbar component
+
+----------------------------------------------------------------------------
+
+- Navbar hover bullet
+
 Notes
 
 - Use React QUery
