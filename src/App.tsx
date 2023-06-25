@@ -1,4 +1,4 @@
-import { MainHeader, Services, Statistics, UpperBar } from "components";
+import { MainHeader, Offers, Services, Statistics, UpperBar } from "components";
 
 function App() {
 	return (
@@ -7,6 +7,7 @@ function App() {
 			<MainHeader />
 			<Statistics />
 			<Services />
+			<Offers />
 		</>
 	);
 }

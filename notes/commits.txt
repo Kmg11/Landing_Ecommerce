@@ -57,6 +57,14 @@ Enhance Service component | Create AppButton component
 
 ----------------------------------------------------------------------------
 
+Create Offers section
+
+- Create Offers component
+- Handle Responsive for Offers component
+
+----------------------------------------------------------------------------
+
+- Enhance Responsive
 - Navbar hover bullet
 - Enhance MainHeader backgroundImage
 
