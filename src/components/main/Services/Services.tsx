@@ -1,4 +1,11 @@
-import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
+import {
+	Box,
+	Container,
+	Grid,
+	Typography,
+	useMediaQuery,
+	useTheme,
+} from "@mui/material";
 import { Service } from "./Service/Service";
 import GroomingImage from "assets/images/services/grooming.png";
 import HealthImage from "assets/images/services/health.png";
@@ -9,11 +16,12 @@ import WalkingImage from "assets/images/services/walking.png";
 
 export const Services = () => {
 	const theme = useTheme();
+	const isXS = useMediaQuery(theme.breakpoints.only("xs"));
 
 	return (
 		<Box component="section" py={5} mb="1.875rem">
 			<Container maxWidth="xl">
-				<Box component="header" textAlign="center">
+				<Box component="header" textAlign="center" mb="30px">
 					<Typography
 						variant="subtitle1"
 						component="h6"
@@ -31,7 +39,7 @@ export const Services = () => {
 					<Typography
 						sx={{ color: "#0B0417" }}
 						component="h2"
-						fontSize="46px"
+						fontSize={!isXS ? "46px" : "35px"}
 						fontWeight={800}
 						lineHeight="46px"
 						letterSpacing={0}

@@ -8,18 +8,26 @@ import { Features } from "./Features/Features";
 export const MainHeader = () => {
 	const theme = useTheme();
 	const isDownLG = useMediaQuery(theme.breakpoints.down("lg"));
+	const isDownMD = useMediaQuery(theme.breakpoints.down("md"));
 
 	return (
-		<Box
-			component="header"
-			sx={{
-				minHeight: "100vh",
-				backgroundImage: `url(${HeaderBackground})`,
-				backgroundRepeat: "no-repeat",
-				backgroundSize: "contain",
-				backgroundPosition: !isDownLG ? "100% 100%" : "0% 0",
-			}}
-		>
+		<Box component="header" sx={{ position: "relative" }}>
+			{!isDownMD && (
+				<Box
+					component="img"
+					src={HeaderBackground}
+					alt="header background"
+					sx={{
+						position: "absolute",
+						top: 0,
+						right: 0,
+						width: "75%",
+						height: !isDownLG ? "100%" : "55%",
+						zIndex: -1,
+					}}
+				/>
+			)}
+
 			<Navbar />
 
 			<Container maxWidth="xl">

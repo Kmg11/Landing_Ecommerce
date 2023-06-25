@@ -64,9 +64,15 @@ Create Offers section
 
 ----------------------------------------------------------------------------
 
-- Enhance Responsive
-- Navbar hover bullet
-- Enhance MainHeader backgroundImage
+Enhance Responsive
+
+- Fix UpperBar responsive
+- Fix Navbar responsive
+- Fix MainHeader background
+- Fix MainHeader responsive
+- Fix Services responsive
+
+----------------------------------------------------------------------------
 
 Notes
 

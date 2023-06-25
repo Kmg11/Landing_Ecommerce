@@ -6,10 +6,15 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 const pages = ["Home", "Services", "Shop", "Blog", "Pages"];
 
 export function List() {
+	const theme = useTheme();
+	const isDownMD = useMediaQuery(theme.breakpoints.down("md"));
+	const isXS = useMediaQuery(theme.breakpoints.only("xs"));
+
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
 		null
 	);
@@ -37,7 +42,7 @@ export function List() {
 					aria-controls="menu-appbar"
 					aria-haspopup="true"
 					onClick={handleOpenNavMenu}
-					color="inherit"
+					color={!isDownMD ? "inherit" : "primary"}
 				>
 					<MenuIcon />
 				</IconButton>
@@ -67,6 +72,12 @@ export function List() {
 							<Typography textAlign="center">{page}</Typography>
 						</MenuItem>
 					))}
+
+					{isXS && (
+						<MenuItem onClick={handleCloseNavMenu} sx={{ minWidth: "120px" }}>
+							<Typography textAlign="center">Cart</Typography>
+						</MenuItem>
+					)}
 				</Menu>
 			</Box>
 

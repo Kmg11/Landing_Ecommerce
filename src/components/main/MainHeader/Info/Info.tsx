@@ -1,7 +1,8 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 export const Info = () => {
 	const theme = useTheme();
+	const isXS = useMediaQuery(theme.breakpoints.only("xs"));
 
 	return (
 		<Box maxWidth="633px" mb="3.125rem">
@@ -22,9 +23,9 @@ export const Info = () => {
 			<Typography
 				variant="h1"
 				sx={{
-					fontSize: "68px",
+					fontSize: !isXS ? "68px" : "32px",
 					fontWeight: 800,
-					lineHeight: "71px",
+					lineHeight: !isXS ? "71px" : "45px",
 					letterSpacing: 0,
 					color: "#0E081E",
 					mb: "1.25rem",

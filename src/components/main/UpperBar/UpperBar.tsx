@@ -45,27 +45,35 @@ export const UpperBar = () => {
 						</Link>
 					</Grid>
 
-					<Grid
-						item
-						xs={12}
-						md={6}
-						display="flex"
-						alignItems="center"
-						justifyContent={isDownMd ? "center" : "end"}
-						gap={5}
-					>
-						<Box display="flex" alignItems="center" gap="10px" color="white">
-							<LocalPhoneIcon fontSize="small" />
-							<Typography component="span" variant="subtitle1" fontWeight="700">
-								0000 - 123456789
-							</Typography>
-						</Box>
+					<Grid item xs={12} md={6}>
+						<Box
+							display="flex"
+							alignItems="center"
+							justifyContent={isDownMd ? "center" : "end"}
+							columnGap={5}
+							flexWrap="wrap"
+						>
+							<Box display="flex" alignItems="center" gap="10px" color="white">
+								<LocalPhoneIcon fontSize="small" />
+								<Typography
+									component="span"
+									variant="subtitle1"
+									fontWeight="700"
+								>
+									0000 - 123456789
+								</Typography>
+							</Box>
 
-						<Box display="flex" alignItems="center" gap="10px" color="white">
-							<EmailIcon fontSize="small" />
-							<Typography component="span" variant="subtitle1" fontWeight="700">
-								info@example.com
-							</Typography>
+							<Box display="flex" alignItems="center" gap="10px" color="white">
+								<EmailIcon fontSize="small" />
+								<Typography
+									component="span"
+									variant="subtitle1"
+									fontWeight="700"
+								>
+									info@example.com
+								</Typography>
+							</Box>
 						</Box>
 					</Grid>
 				</Grid>
