@@ -49,8 +49,14 @@ Create Services section
 
 ----------------------------------------------------------------------------
 
-- Add image to first service and check background for other services
-- Create Button completed
+Enhance Service component | Create AppButton component
+
+- Handle hover on service
+- Add background images in service
+- Create Button component
+
+----------------------------------------------------------------------------
+
 - Navbar hover bullet
 - Enhance MainHeader backgroundImage
 
