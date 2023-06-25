@@ -42,6 +42,15 @@ Create Statistics section
 
 ----------------------------------------------------------------------------
 
+Create Services section
+
+- Create Services component
+- Handle Responsive for Services component
+
+----------------------------------------------------------------------------
+
+- Add image to first service and check background for other services
+- Create Button completed
 - Navbar hover bullet
 - Enhance MainHeader backgroundImage
 
