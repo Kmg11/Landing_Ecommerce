@@ -16,7 +16,7 @@ export const MainHeader = () => {
 				minHeight: "100vh",
 				backgroundImage: `url(${HeaderBackground})`,
 				backgroundRepeat: "no-repeat",
-				backgroundSize: "fill",
+				backgroundSize: "contain",
 				backgroundPosition: !isDownLG ? "100% 100%" : "0% 0",
 			}}
 		>

@@ -35,7 +35,15 @@ Create Header
 
 ----------------------------------------------------------------------------
 
+Create Statistics section
+
+- Create Statistics component
+- Handle Responsive for Statistics component
+
+----------------------------------------------------------------------------
+
 - Navbar hover bullet
+- Enhance MainHeader backgroundImage
 
 Notes
 

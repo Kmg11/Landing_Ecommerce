@@ -1,10 +1,11 @@
-import { MainHeader, UpperBar } from "components";
+import { MainHeader, Statistics, UpperBar } from "components";
 
 function App() {
 	return (
 		<>
 			<UpperBar />
 			<MainHeader />
+			<Statistics />
 		</>
 	);
 }
