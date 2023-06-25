@@ -1,0 +1,43 @@
+[
+	{
+		"image": "/images/walking.png",
+		"title": "Walking & Sitting",
+		"description": "Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae eget dolor morbi",
+		"price": { "amount": 15, "type": "hour" }
+	},
+
+	{
+		"image": "/images/grooming.png",
+		"title": "Pet Grooming",
+		"description": "Et odio pellentesque diam volutpat commodo sed egestas egestas  pellentesque nec nam ",
+		"price": { "amount": 39, "type": "complex" }
+	},
+
+	{
+		"image": "/images/training.png",
+		"title": "Pet Training",
+		"description": "Aliquam ut porttitor leo a diam sollicitudin tempor  sit amet est placerat",
+		"price": { "amount": 27, "type": "hour" }
+	},
+
+	{
+		"image": "/images/taxi.png",
+		"title": "Pet Taxi",
+		"description": "Maecenas ultricies mi eget mauris pharetra et ultrices consectetur adipiscing elit",
+		"price": { "amount": 22, "type": "trip" }
+	},
+
+	{
+		"image": "/images/health.png",
+		"title": "Health & Wellness",
+		"description": "Amet porttitor eget dolor morbi non arcu risus quis varius blandit aliquam etiam",
+		"price": { "amount": 39, "type": "visit" }
+	},
+
+	{
+		"image": "/images/hotel.png",
+		"title": "Pet Hotel",
+		"description": "Turpis massa sed elementum tempus egestas sed sed risus aliquam  urna cursus eget n",
+		"price": { "amount": 15, "type": "night" }
+	}
+]

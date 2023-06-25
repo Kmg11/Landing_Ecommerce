@@ -7,16 +7,22 @@ import {
 	useTheme,
 } from "@mui/material";
 import { Service } from "./Service/Service";
-import GroomingImage from "assets/images/services/grooming.png";
-import HealthImage from "assets/images/services/health.png";
-import HotelImage from "assets/images/services/hotel.png";
-import TaxiImage from "assets/images/services/taxi.png";
-import TrainingImage from "assets/images/services/training.png";
-import WalkingImage from "assets/images/services/walking.png";
+import { useQuery } from "@tanstack/react-query";
+import { ServiceType } from "types";
 
 export const Services = () => {
 	const theme = useTheme();
 	const isXS = useMediaQuery(theme.breakpoints.only("xs"));
+
+	const { data: services } = useQuery<ServiceType[]>({
+		queryKey: ["services"],
+		queryFn: async () => {
+			const response = await fetch("/data/services.json");
+			const data = await response.json();
+
+			return data;
+		},
+	});
 
 	return (
 		<Box component="section" py={5} mb="1.875rem">
@@ -50,47 +56,9 @@ export const Services = () => {
 
 				<Box component="section">
 					<Grid container spacing="1.875rem">
-						<Service
-							image={WalkingImage}
-							title="Walking & Sitting"
-							description="Ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae eget dolor morbi"
-							price={{ amount: 15, type: "hour" }}
-						/>
-
-						<Service
-							image={GroomingImage}
-							title="Pet Grooming"
-							description="Et odio pellentesque diam volutpat commodo sed egestas egestas  pellentesque nec nam "
-							price={{ amount: 39, type: "complex" }}
-						/>
-
-						<Service
-							image={TrainingImage}
-							title="Pet Training"
-							description="Aliquam ut porttitor leo a diam sollicitudin tempor  sit amet est placerat"
-							price={{ amount: 27, type: "hour" }}
-						/>
-
-						<Service
-							image={TaxiImage}
-							title="Pet Taxi"
-							description="Maecenas ultricies mi eget mauris pharetra et ultrices consectetur adipiscing elit"
-							price={{ amount: 22, type: "trip" }}
-						/>
-
-						<Service
-							image={HealthImage}
-							title="Health & Wellness"
-							description="Amet porttitor eget dolor morbi non arcu risus quis varius blandit aliquam etiam"
-							price={{ amount: 39, type: "visit" }}
-						/>
-
-						<Service
-							image={HotelImage}
-							title="Pet Hotel"
-							description="Turpis massa sed elementum tempus egestas sed sed risus aliquam  urna cursus eget n"
-							price={{ amount: 15, type: "night" }}
-						/>
+						{services?.map((service, i) => (
+							<Service key={i} {...service} />
+						))}
 					</Grid>
 				</Box>
 			</Container>

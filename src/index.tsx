@@ -4,6 +4,9 @@ import reportWebVitals from "./reportWebVitals";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import App from "App";
 import { theme } from "styles";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement
@@ -11,10 +14,12 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<CssBaseline enableColorScheme />
-			<App />
-		</ThemeProvider>
+		<QueryClientProvider client={queryClient}>
+			<ThemeProvider theme={theme}>
+				<CssBaseline enableColorScheme />
+				<App />
+			</ThemeProvider>
+		</QueryClientProvider>
 	</React.StrictMode>
 );
 

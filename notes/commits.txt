@@ -74,7 +74,11 @@ Enhance Responsive
 
 ----------------------------------------------------------------------------
 
-Notes
+Setup react-query
 
-- Use React QUery
-- Type docs in Readme.md
+- Install react-query
+- Setup react-query
+- Create data folder to create services.json file as a fakeData
+- Connect services with services.json file fakeData
+
+----------------------------------------------------------------------------

@@ -6,13 +6,9 @@ import { Box, Grid } from "@mui/material";
 import PathImage from "assets/images/services/Path.png";
 import PawsImage from "assets/images/services/Paws.png";
 import { AppButton } from "components/ui";
+import { ServiceType } from "types";
 
-type ServiceProps = {
-	title: string;
-	image: string;
-	description: string;
-	price: { amount: number; type: string };
-};
+type ServiceProps = ServiceType;
 
 export function Service({ title, image, description, price }: ServiceProps) {
 	return (
